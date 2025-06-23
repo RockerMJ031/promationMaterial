@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purple Ruler 升学情报中心 | 专业升学规划与考试资讯</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'purple-brand': '#5b3c88',
+                        'purple-light': '#8b5fbf',
+                        'purple-dark': '#4a2c73'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #5b3c88 0%, #8b5fbf 50%, #5b3c88 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(91, 60, 136, 0.2);
+        }
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Header -->
+    <header class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-8">
+                <i class="fas fa-crown text-6xl mb-4 pulse-animation"></i>
+                <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                    Purple Ruler
+                </h1>
+                <p class="text-2xl md:text-3xl mb-4 opacity-90">
+                    升学情报中心
+                </p>
+                <p class="text-lg md:text-xl opacity-75 max-w-2xl mx-auto">
+                    专业升学规划 · 权威考试资讯 · 个性化解决方案
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6 mt-12 max-w-4xl mx-auto">
+                <div class="bg-white bg-opacity-20 rounded-lg p-6">
+                    <i class="fas fa-chart-line text-3xl mb-3"></i>
+                    <h3 class="text-xl font-bold mb-2">数据驱动</h3>
+                    <p class="text-sm opacity-90">基于大数据分析的升学趋势预测</p>
+                </div>
+                <div class="bg-white bg-opacity-20 rounded-lg p-6">
+                    <i class="fas fa-users text-3xl mb-3"></i>
+                    <h3 class="text-xl font-bold mb-2">专家团队</h3>
+                    <p class="text-sm opacity-90">资深教育顾问与升学规划师</p>
+                </div>
+                <div class="bg-white bg-opacity-20 rounded-lg p-6">
+                    <i class="fas fa-clock text-3xl mb-3"></i>
+                    <h3 class="text-xl font-bold mb-2">实时更新</h3>
+                    <p class="text-sm opacity-90">第一时间获取最新政策动态</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6">
+            <div class="flex items-center justify-between py-4">
+                <div class="flex items-center space-x-8">
+                    <span class="text-xl font-bold text-purple-brand">
+                        <i class="fas fa-home mr-2"></i>情报中心
+                    </span>
+                    <div class="hidden md:flex space-x-6">
+                        <a href="#reports" class="text-gray-700 hover:text-purple-brand transition-colors">
+                            <i class="fas fa-newspaper mr-1"></i>最新情报
+                        </a>
+                        <a href="#categories" class="text-gray-700 hover:text-purple-brand transition-colors">
+                            <i class="fas fa-tags mr-1"></i>分类浏览
+                        </a>
+                        <a href="#about" class="text-gray-700 hover:text-purple-brand transition-colors">
+                            <i class="fas fa-info-circle mr-1"></i>关于我们
+                        </a>
+                    </div>
+                </div>
+                <div class="text-sm text-gray-600">
+                    <i class="fas fa-calendar mr-1"></i>
+                    最后更新：<span id="last-update">2024年12月19日</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+        <!-- Latest Reports Section -->
+        <section id="reports" class="mb-16">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-purple-brand mb-4">
+                    <i class="fas fa-fire mr-3"></i>最新升学情报
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    第一时间掌握升学考试动态，抢占先机
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-1 gap-8">
+                <!-- Featured Report -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden card-hover">
+                    <div class="bg-gradient-to-r from-purple-brand to-purple-light p-6">
+                        <div class="flex items-center justify-between text-white">
+                            <div>
+                                <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm font-medium">
+                                    <i class="fas fa-star mr-1"></i>今日热点
+                                </span>
+                                <h3 class="text-2xl font-bold mt-3 mb-2">
+                                    2024年12月19日 升学考试热点情报
+                                </h3>
+                                <p class="opacity-90">
+                                    剑桥英语2025直营 · 英国私校入学倒计时 · TOEFL改革生效
+                                </p>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-3xl font-bold">3</div>
+                                <div class="text-sm opacity-90">重要话题</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-8">
+                        <div class="grid md:grid-cols-3 gap-6 mb-6">
+                            <div class="text-center">
+                                <div class="bg-red-100 text-red-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                                    <i class="fas fa-certificate text-2xl"></i>
+                                </div>
+                                <h4 class="font-bold text-purple-brand mb-2">剑桥英语2025</h4>
+                                <p class="text-sm text-gray-600">官方直营开放，考位稀缺</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="bg-blue-100 text-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                                    <i class="fas fa-school text-2xl"></i>
+                                </div>
+                                <h4 class="font-bold text-purple-brand mb-2">英国私校入学</h4>
+                                <p class="text-sm text-gray-600">11+预测试9月截止</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="bg-green-100 text-green-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                                    <i class="fas fa-graduation-cap text-2xl"></i>
+                                </div>
+                                <h4 class="font-bold text-purple-brand mb-2">TOEFL改革</h4>
+                                <p class="text-sm text-gray-600">考试时长骤减40%</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center justify-between pt-6 border-t">
+                            <div class="flex items-center space-x-4 text-sm text-gray-600">
+                                <span><i class="fas fa-eye mr-1"></i>专业分析</span>
+                                <span><i class="fas fa-lightbulb mr-1"></i>实用对策</span>
+                                <span><i class="fas fa-copy mr-1"></i>一键复制</span>
+                            </div>
+                            <a href="20241219-升学考试热点.html" 
+                               class="bg-purple-brand text-white px-6 py-3 rounded-lg hover:bg-purple-dark transition-colors font-medium">
+                                <i class="fas fa-arrow-right mr-2"></i>查看详情
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section id="categories" class="mb-16">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-purple-brand mb-4">
+                    <i class="fas fa-th-large mr-3"></i>分类浏览
+                </h2>
+                <p class="text-xl text-gray-600">
+                    按考试类型快速找到相关资讯
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-xl p-6 shadow-lg card-hover text-center">
+                    <div class="bg-red-100 text-red-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-certificate text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-purple-brand mb-2">剑桥英语</h3>
+                    <p class="text-gray-600 text-sm mb-4">KET · PET · FCE · CAE · CPE</p>
+                    <span class="bg-red-50 text-red-600 px-3 py-1 rounded-full text-xs font-medium">
+                        1 篇情报
+                    </span>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 shadow-lg card-hover text-center">
+                    <div class="bg-blue-100 text-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-school text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-purple-brand mb-2">英国私校</h3>
+                    <p class="text-gray-600 text-sm mb-4">7+ · 11+ · 13+ · ISEB</p>
+                    <span class="bg-blue-50 text-blue-600 px-3 py-1 rounded-full text-xs font-medium">
+                        1 篇情报
+                    </span>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 shadow-lg card-hover text-center">
+                    <div class="bg-green-100 text-green-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-graduation-cap text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-purple-brand mb-2">TOEFL系列</h3>
+                    <p class="text-gray-600 text-sm mb-4">TOEFL iBT · Junior · Primary</p>
+                    <span class="bg-green-50 text-green-600 px-3 py-1 rounded-full text-xs font-medium">
+                        1 篇情报
+                    </span>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 shadow-lg card-hover text-center">
+                    <div class="bg-purple-100 text-purple-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-trophy text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-purple-brand mb-2">竞赛考试</h3>
+                    <p class="text-gray-600 text-sm mb-4">John Locke · UKChO · LAMDA</p>
+                    <span class="bg-purple-50 text-purple-600 px-3 py-1 rounded-full text-xs font-medium">
+                        即将更新
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="mb-16">
+            <div class="bg-gradient-to-r from-purple-brand to-purple-light rounded-2xl p-8 text-white">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold mb-4">
+                        <i class="fas fa-chart-bar mr-3"></i>Purple Ruler 数据概览
+                    </h2>
+                    <p class="text-lg opacity-90">专业数据，助力升学决策</p>
+                </div>
+                
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <div class="text-4xl font-bold mb-2">1000+</div>
+                        <div class="text-sm opacity-90">成功案例</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold mb-2">50+</div>
+                        <div class="text-sm opacity-90">合作学校</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold mb-2">24/7</div>
+                        <div class="text-sm opacity-90">实时监控</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold mb-2">95%</div>
+                        <div class="text-sm opacity-90">满意度</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="mb-16">
+            <div class="bg-white rounded-2xl shadow-xl p-8">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold text-purple-brand mb-4">
+                        <i class="fas fa-info-circle mr-3"></i>关于 Purple Ruler
+                    </h2>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                        Purple Ruler 是专业的升学情报与规划服务机构，致力于为中国家庭提供最权威、最及时的国际教育资讯和个性化升学解决方案。
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="bg-purple-100 text-purple-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-search text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-purple-brand mb-3">深度调研</h3>
+                        <p class="text-gray-600">
+                            每日监控全球教育政策变化，第一时间发现影响升学的关键信息
+                        </p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="bg-purple-100 text-purple-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-brain text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-purple-brand mb-3">专业分析</h3>
+                        <p class="text-gray-600">
+                            运用万维钢式逻辑分析框架，将复杂信息转化为可执行的升学策略
+                        </p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="bg-purple-100 text-purple-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-rocket text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-purple-brand mb-3">实用对策</h3>
+                        <p class="text-gray-600">
+                            提供具体可操作的应对方案，帮助家长在升学路上抢占先机
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">
+                        <i class="fas fa-crown mr-2"></i>Purple Ruler
+                    </h3>
+                    <p class="text-sm opacity-90 mb-4">
+                        专业升学情报与规划服务
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-purple-light transition-colors">
+                            <i class="fab fa-wechat text-xl"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-purple-light transition-colors">
+                            <i class="fab fa-weibo text-xl"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-purple-light transition-colors">
+                            <i class="fas fa-envelope text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">服务范围</h4>
+                    <ul class="space-y-2 text-sm opacity-90">
+                        <li><a href="#" class="hover:text-purple-light transition-colors">升学规划</a></li>
+                        <li><a href="#" class="hover:text-purple-light transition-colors">考试咨询</a></li>
+                        <li><a href="#" class="hover:text-purple-light transition-colors">政策解读</a></li>
+                        <li><a href="#" class="hover:text-purple-light transition-colors">学校申请</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">考试类型</h4>
+                    <ul class="space-y-2 text-sm opacity-90">
+                        <li><a href="#" class="hover:text-purple-light transition-colors">剑桥英语</a></li>
+                        <li><a href="#" class="hover:text-purple-light transition-colors">英国私校</a></li>
+                        <li><a href="#" class="hover:text-purple-light transition-colors">TOEFL系列</a></li>
+                        <li><a href="#" class="hover:text-purple-light transition-colors">国际竞赛</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">联系我们</h4>
+                    <ul class="space-y-2 text-sm opacity-90">
+                        <li><i class="fas fa-phone mr-2"></i>400-123-4567</li>
+                        <li><i class="fas fa-envelope mr-2"></i>info@purpleruler.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>北京 · 上海 · 深圳</li>
+                        <li><i class="fas fa-clock mr-2"></i>周一至周日 9:00-21:00</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-purple-light pt-8 text-center">
+                <p class="text-sm opacity-75">
+                    © 2024 Purple Ruler 升学情报中心. 保留所有权利. | 内容研究与可视化：@MJ Quan
+                </p>
+                <p class="text-xs opacity-60 mt-2">
+                    本站信息仅供参考，具体政策以官方发布为准
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Update last update time
+        document.getElementById('last-update').textContent = new Date().toLocaleDateString('zh-CN');
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('shadow-xl');
+            } else {
+                nav.classList.remove('shadow-xl');
+            }
+        });
+        
+        console.log('🚀 Purple Ruler 升学情报中心已加载完成');
+        console.log('📊 当前可用情报：2024年12月19日升学考试热点');
+    </script>
+</body>
+</html>
